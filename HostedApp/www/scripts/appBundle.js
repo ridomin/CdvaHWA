@@ -10,11 +10,12 @@ var CordovaHostedApp;
             oReq.addEventListener("error", transferFailed);
             oReq.addEventListener("abort", transferCanceled);
             oReq.open("GET", "https://cordovahostedweb.azurewebsites.net/");
+            alert('vs');
             oReq.send();
         }
         StartHostedWebApp.checkConnectionAndRedirect = checkConnectionAndRedirect;
         function transferComplete(data) {
-            var targetUrl = "https://cordovahostedweb.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId;
+            var targetUrl = "https://cordovahostedweb.azurewebsites.net/cordova/clientProxy?platform=" + cordova.platformId;
             var bkpLink = document.getElementById("bkpLink");
             bkpLink.setAttribute("href", targetUrl);
             window.location.replace(targetUrl);

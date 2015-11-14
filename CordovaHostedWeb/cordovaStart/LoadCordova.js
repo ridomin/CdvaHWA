@@ -26,9 +26,11 @@ var CordovaHostedWeb;
             var scriptEl = document.createElement('script');
             scriptEl.src = '../../cordovaDist/' + platform + '/cordova.js';
             document.body.appendChild(scriptEl);
+            setTimeout(function () { console.log('..'); }, 200);
             var scriptApp = document.createElement('script');
-            scriptApp.src + '../../cordovaApp/app.js';
+            scriptApp.src = '../../cordovaApp/app.js';
             document.body.appendChild(scriptApp);
+            CordovaHostedApp.Application.initialize();
         }
         function getQueryVariable(variable) {
             var query = window.location.search.substring(1);
