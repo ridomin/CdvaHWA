@@ -176,6 +176,8 @@
     <Content Include="cordovadist\windows\scripts\appBundle.js" />
     <Content Include="cordovadist\windows\scripts\platformOverrides.js" />
     <Content Include="cordovadist\windows\scripts\winstore-jscompat.js" />
+    <Content Include="cordovaStart\CookieManager.js" />
+    <Content Include="cordovaStart\LoadCordova.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -184,8 +186,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ImportCordovaAssets.proj" />
     <Content Include="cordovaApp\app.js.map" />
-    <Content Include="cordovaApp\tsconfig.json" />
     <Content Include="cordovaApp\tsd.json" />
+    <Content Include="cordovaStart\LoadCordova.js.map" />
+    <Content Include="cordovaStart\CookieManager.js.map" />
     <None Include="Properties\PublishProfiles\cordovahostedweb.pubxml" />
     <None Include="Properties\PublishProfiles\ridoapps.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -215,6 +218,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Cordova\Index.cshtml" />
+    <Content Include="Views\Cordova\ClientProxy.cshtml" />
+    <Content Include="Views\Cordova\Client.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -252,6 +257,8 @@
     <TypeScriptCompile Include="cordovaApp\typings\cordova\plugins\Vibration.d.ts" />
     <TypeScriptCompile Include="cordovaApp\typings\cordova\plugins\WebSQL.d.ts" />
     <TypeScriptCompile Include="cordovaApp\typings\tsd.d.ts" />
+    <TypeScriptCompile Include="cordovaStart\CookieManager.ts" />
+    <TypeScriptCompile Include="cordovaStart\LoadCordova.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -261,6 +268,22 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

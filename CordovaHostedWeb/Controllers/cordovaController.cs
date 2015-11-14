@@ -28,5 +28,15 @@ namespace CordovaHostedWeb.Controllers
             }
             return RedirectToAction("index");
         }
+
+        public ActionResult ClientProxy()
+        {
+            return View();
+        }
+
+        public ActionResult Client()
+        {
+            return View();
+        }
     }
 }

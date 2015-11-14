@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "ClientProxy";
+}
+@section Metas{
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://cordovahostedweb.azurewebsites.net/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+}
+<script src="~/cordovaStart/CookieManager.js"></script>
+<script src="~/cordovaStart/LoadCordova.js"></script>
+<script name="cordova"></script>
+<script name="app"></script>
+
+<h2>ClientProxy</h2>
+
+
+<p><a class="btn btn-primary btn-lg">Take Picture &raquo;</a></p>
+<img class="media-object pull-left" />
