@@ -259,6 +259,7 @@
     <TypeScriptCompile Include="cordovaApp\typings\tsd.d.ts" />
     <TypeScriptCompile Include="cordovaStart\CookieManager.ts" />
     <TypeScriptCompile Include="cordovaStart\LoadCordova.ts" />
+    <TypeScriptCompile Include="StartHostedWebApp.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

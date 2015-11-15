@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{435F91C7-6787-4F00-AE55-2C3C4DFBBD18}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <Content Include="cordovadist\android\cordova-js-src\android\nativeapiprovider.js" />
+    <Content Include="cordovadist\android\cordova-js-src\android\promptbasednativeapi.js" />
+    <Content Include="cordovadist\android\cordova-js-src\exec.js" />
+    <Content Include="cordovadist\android\cordova-js-src\platform.js" />
+    <Content Include="cordovadist\android\cordova-js-src\plugin\android\app.js" />
+    <Content Include="cordovadist\android\cordova.js" />
+    <Content Include="cordovadist\android\cordova_plugins.js" />
+    <Content Include="cordovadist\android\plugins\cordova-plugin-camera\www\Camera.js" />
+    <Content Include="cordovadist\android\plugins\cordova-plugin-camera\www\CameraConstants.js" />
+    <Content Include="cordovadist\android\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js" />
+    <Content Include="cordovadist\android\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js" />
+    <Content Include="cordovadist\android\plugins\cordova-plugin-network-information\www\Connection.js" />
+    <Content Include="cordovadist\android\plugins\cordova-plugin-network-information\www\network.js" />
+    <Content Include="cordovadist\android\plugins\cordova-plugin-whitelist\whitelist.js" />
+    <Content Include="cordovadist\android\scripts\android2.3-jscompat.js" />
+    <Content Include="cordovadist\android\scripts\appBundle.js" />
+    <Content Include="cordovadist\android\scripts\platformOverrides.js" />
+    <Content Include="cordovadist\ios\cordova-js-src\exec.js" />
+    <Content Include="cordovadist\ios\cordova-js-src\platform.js" />
+    <Content Include="cordovadist\ios\cordova.js" />
+    <Content Include="cordovadist\ios\cordova_plugins.js" />
+    <Content Include="cordovadist\ios\plugins\cordova-plugin-camera\www\Camera.js" />
+    <Content Include="cordovadist\ios\plugins\cordova-plugin-camera\www\CameraConstants.js" />
+    <Content Include="cordovadist\ios\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js" />
+    <Content Include="cordovadist\ios\plugins\cordova-plugin-camera\www\ios\CameraPopoverHandle.js" />
+    <Content Include="cordovadist\ios\plugins\cordova-plugin-network-information\www\Connection.js" />
+    <Content Include="cordovadist\ios\plugins\cordova-plugin-network-information\www\network.js" />
+    <Content Include="cordovadist\ios\scripts\appBundle.js" />
+    <Content Include="cordovadist\windows\cordova-js-src\exec.js" />
+    <Content Include="cordovadist\windows\cordova-js-src\platform.js" />
+    <Content Include="cordovadist\windows\cordova.js" />
+    <Content Include="cordovadist\windows\cordova_plugins.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-camera\src\windows\CameraProxy.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-camera\www\Camera.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-camera\www\CameraConstants.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-network-information\www\Connection.js" />
+    <Content Include="cordovadist\windows\plugins\cordova-plugin-network-information\www\network.js" />
+    <Content Include="cordovadist\windows\scripts\appBundle.js" />
+    <Content Include="cordovadist\windows\scripts\platformOverrides.js" />
+    <Content Include="cordovadist\windows\scripts\winstore-jscompat.js" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="---app.ts" />
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="typings\cordova\cordova.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\BatteryStatus.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Camera.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Contacts.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Device.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\DeviceMotion.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\DeviceOrientation.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Dialogs.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\FileSystem.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\FileTransfer.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Globalization.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\InAppBrowser.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Keyboard.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Media.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\MediaCapture.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\NetworkInformation.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Push.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Splashscreen.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\StatusBar.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\Vibration.d.ts" />
+    <TypeScriptCompile Include="typings\cordova\plugins\WebSQL.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="cordovadist\LoadCordova.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tsd.json" />
+    <None Include="cdvahwa.pubxml" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>AutoCHWA</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63622</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63622/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
