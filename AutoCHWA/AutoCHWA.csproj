@@ -51,6 +51,7 @@
     <Content Include="cordovadist\ios\plugins\cordova-plugin-network-information\www\Connection.js" />
     <Content Include="cordovadist\ios\plugins\cordova-plugin-network-information\www\network.js" />
     <Content Include="cordovadist\ios\scripts\appBundle.js" />
+    <Content Include="cordovadist\LoadCordova.js" />
     <Content Include="cordovadist\windows\cordova-js-src\exec.js" />
     <Content Include="cordovadist\windows\cordova-js-src\platform.js" />
     <Content Include="cordovadist\windows\cordova.js" />
