@@ -78,4 +78,3 @@ var CordovaHostedWeb;
     };
 })(CordovaHostedWeb || (CordovaHostedWeb = {}));
 ;
-//# sourceMappingURL=LoadCordova.js.map
