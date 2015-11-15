@@ -72,7 +72,8 @@
         }
     }
    
-    window.onload = function () {
+    window.onload = ()=>  {
+        console.log("loading cordova")
         CordovaLoader.init();
      
     }
