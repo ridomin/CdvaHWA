@@ -12,13 +12,14 @@
             oReq.addEventListener("error", transferFailed);
             oReq.addEventListener("abort", transferCanceled);
 
-            oReq.open("HEAD", hwa_server);
+            oReq.open("GET", hwa_server);
             oReq.send();
         }
         function transferComplete(data) {
             var targetUrl: string = hwa_server + hwa_launcher + cordova.platformId; 
             var bkpLink: HTMLAnchorElement = <HTMLAnchorElement>document.getElementById("bkpLink");
             bkpLink.setAttribute("href", targetUrl);
+            bkpLink.text = targetUrl;
             window.location.replace(targetUrl);
 
         }
@@ -34,4 +35,8 @@
         }
         
     }
+}
+
+window.onload = () => {
+    CordovaHostedApp.StartHostedWebApp.checkConnectionAndRedirect();
 }
