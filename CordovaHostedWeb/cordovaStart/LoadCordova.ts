@@ -29,9 +29,9 @@ module CordovaHostedWeb {
             setTimeout(function () { console.log('..') }, 200);
          
 
-            var scriptApp: HTMLScriptElement = document.createElement('script');
-            scriptApp.src = '../../cordovaApp/app.js';
-            document.body.appendChild(scriptApp);
+            //var scriptApp: HTMLScriptElement = document.createElement('script');
+            //scriptApp.src = '../../cordovaApp/app.js';
+            //document.body.appendChild(scriptApp);
 
             CordovaHostedApp.Application.initialize();
             
@@ -49,9 +49,10 @@ module CordovaHostedWeb {
             console.log('Query variable %s not found', variable);
         }
     }
-      
+   
+   
     window.onload = function () {
         CordovaLoader.init();
-        
+     
     }
 };

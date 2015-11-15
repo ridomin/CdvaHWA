@@ -1,3 +1,5 @@
+/// <reference path="typings/cordova/cordova.d.ts" />
+/// <reference path="typings/cordova/plugins/Camera.d.ts" />
 var CordovaHostedApp;
 (function (CordovaHostedApp) {
     "use strict";
@@ -8,6 +10,7 @@ var CordovaHostedApp;
         }
         Application.initialize = initialize;
         function onDeviceReady() {
+            // Handle the Cordova pause and resume events
             document.addEventListener('pause', onPause, false);
             document.addEventListener('resume', onResume, false);
             document.getElementsByClassName('btn-lg')[0].addEventListener('click', takePicture);
@@ -39,8 +42,10 @@ var CordovaHostedApp;
         function onResume() {
         }
     })(Application = CordovaHostedApp.Application || (CordovaHostedApp.Application = {}));
+    var currEvent = window.onload;
     window.onload = function () {
         Application.initialize();
+        currEvent();
     };
 })(CordovaHostedApp || (CordovaHostedApp = {}));
 //# sourceMappingURL=app.js.map

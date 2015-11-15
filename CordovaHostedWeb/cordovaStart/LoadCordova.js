@@ -1,3 +1,5 @@
+/// <reference path="CookieManager.ts" />
+/// <reference path="../cordovaApp/app.ts" />
 var CordovaHostedWeb;
 (function (CordovaHostedWeb) {
     var CordovaLoader;
@@ -27,9 +29,9 @@ var CordovaHostedWeb;
             scriptEl.src = '../../cordovaDist/' + platform + '/cordova.js';
             document.body.appendChild(scriptEl);
             setTimeout(function () { console.log('..'); }, 200);
-            var scriptApp = document.createElement('script');
-            scriptApp.src = '../../cordovaApp/app.js';
-            document.body.appendChild(scriptApp);
+            //var scriptApp: HTMLScriptElement = document.createElement('script');
+            //scriptApp.src = '../../cordovaApp/app.js';
+            //document.body.appendChild(scriptApp);
             CordovaHostedApp.Application.initialize();
         }
         function getQueryVariable(variable) {
