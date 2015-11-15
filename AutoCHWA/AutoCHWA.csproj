@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="app.js" />
     <Content Include="cordovadist\android\cordova-js-src\android\nativeapiprovider.js" />
     <Content Include="cordovadist\android\cordova-js-src\android\promptbasednativeapi.js" />
     <Content Include="cordovadist\android\cordova-js-src\exec.js" />
@@ -71,7 +72,6 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="---app.ts" />
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="typings\cordova\cordova.d.ts" />
     <TypeScriptCompile Include="typings\cordova\plugins\BatteryStatus.d.ts" />
@@ -99,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="tsd.json" />
-    <None Include="cdvahwa.pubxml" />
+    <Content Include="app.js.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
