@@ -24,7 +24,7 @@ var CordovaHostedWeb;
         }
         function loadCordova(platform) {
             var scriptEl = document.createElement('script');
-            scriptEl.src = '../../cordovaDist/' + platform + '/cordova.js';
+            scriptEl.src = 'cordovaDist/' + platform + '/cordova.js';
             document.body.appendChild(scriptEl);
             // setTimeout(function () { console.log('..') }, 200);
             //var scriptApp: HTMLScriptElement = document.createElement('script');
@@ -79,4 +79,3 @@ var CordovaHostedWeb;
     };
 })(CordovaHostedWeb || (CordovaHostedWeb = {}));
 ;
-//# sourceMappingURL=LoadCordova.js.map

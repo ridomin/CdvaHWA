@@ -21,7 +21,7 @@
 
         function loadCordova(platform) {
             var scriptEl: HTMLScriptElement =document.createElement('script');
-            scriptEl.src = '../../cordovaDist/' + platform + '/cordova.js';
+            scriptEl.src = 'cordovaDist/' + platform + '/cordova.js';
             document.body.appendChild(scriptEl);
             
            // setTimeout(function () { console.log('..') }, 200);
