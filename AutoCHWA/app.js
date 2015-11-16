@@ -32,7 +32,8 @@ var CordovaHostedApp;
                 var srcAttr = document.createAttribute("src");
                 srcAttr.value = "data:image/jpeg;base64," + imgData;
                 el.attributes.setNamedItem(srcAttr);
-            }, function () {
+            }, function (err) {
+                log(err);
                 alert('Error taking picture');
             }, options);
             return false;
@@ -41,6 +42,18 @@ var CordovaHostedApp;
         }
         function onResume() {
         }
+        function log(o) {
+            var el = document.getElementById("consoleDiv");
+            if (el == null) {
+                el = document.createElement("div");
+                el.id = "consoleDiv";
+                document.body.appendChild(el);
+            }
+            el.innerText += typeof o + "\n";
+            for (var p in o) {
+                el.innerText += p + o[p] + "\n";
+            }
+        }
     })(Application = CordovaHostedApp.Application || (CordovaHostedApp.Application = {}));
     var currEvent = window.onload;
     window.onload = function () {
@@ -48,4 +61,3 @@ var CordovaHostedApp;
         currEvent();
     };
 })(CordovaHostedApp || (CordovaHostedApp = {}));
-//# sourceMappingURL=app.js.map
