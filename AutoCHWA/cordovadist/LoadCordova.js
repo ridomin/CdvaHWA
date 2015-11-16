@@ -74,7 +74,9 @@ var CordovaHostedWeb;
         return CookieManager;
     })();
     window.onload = function () {
+        console.log("loading cordova");
         CordovaLoader.init();
     };
 })(CordovaHostedWeb || (CordovaHostedWeb = {}));
 ;
+//# sourceMappingURL=LoadCordova.js.map
