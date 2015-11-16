@@ -58,6 +58,9 @@ var CordovaHostedApp;
     var currEvent = window.onload;
     window.onload = function () {
         Application.initialize();
-        currEvent();
+        if (currEvent) {
+            currEvent();
+        }
+        ;
     };
 })(CordovaHostedApp || (CordovaHostedApp = {}));

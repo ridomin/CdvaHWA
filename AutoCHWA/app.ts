@@ -74,6 +74,8 @@ module CordovaHostedApp {
     var currEvent : any = window.onload;
     window.onload = function () {
         Application.initialize();
-        currEvent();
+        if (currEvent) {
+            currEvent()
+        };
     }
 }
