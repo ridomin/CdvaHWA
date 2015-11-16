@@ -39,7 +39,7 @@ module CordovaHostedApp {
                 },
                 function (err) {
                     log(err);
-                    alert('Error taking picture');
+                    alert('Error taking picture ' + err);
                 },
                 options);
 
