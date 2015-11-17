@@ -15,6 +15,8 @@ var CordovaHostedApp;
         StartHostedWebApp.checkConnectionAndRedirect = checkConnectionAndRedirect;
         function transferComplete(data) {
             var targetUrl = "https://cordovahostedweb.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId;
+            var bkpLink = document.getElementById("bkpLink");
+            bkpLink.setAttribute("href", targetUrl);
             window.location.replace(targetUrl);
         }
         function transferFailed(err) {

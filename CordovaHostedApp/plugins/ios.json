@@ -82,13 +82,13 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.myappe4f790"
-        },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "io.cordova.myappe4f790"
         },
         "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "io.cordova.myappe4f790"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.myappe4f790"
         }
     },

@@ -15,7 +15,8 @@
         }
         function transferComplete(data) {
             var targetUrl: string = "https://cordovahostedweb.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId; 
-
+            var bkpLink: HTMLAnchorElement = <HTMLAnchorElement>document.getElementById("bkpLink");
+            bkpLink.setAttribute("href", targetUrl);
             window.location.replace(targetUrl);
 
         }
