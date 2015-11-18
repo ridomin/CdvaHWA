@@ -12,7 +12,7 @@
             oReq.addEventListener("error", transferFailed);
             oReq.addEventListener("abort", transferCanceled);
 
-            oReq.open("GET", hwa_server);
+            oReq.open("HEAD", hwa_server);
             oReq.send();
         }
         function transferComplete(data) {
@@ -20,8 +20,9 @@
             var bkpLink: HTMLAnchorElement = <HTMLAnchorElement>document.getElementById("bkpLink");
             bkpLink.setAttribute("href", targetUrl);
             bkpLink.text = targetUrl;
-            window.location.replace(targetUrl);
-
+            console.log(targetUrl);
+           
+            window.location.href =targetUrl;
         }
 
         function transferFailed(err) {
