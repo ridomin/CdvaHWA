@@ -68,6 +68,7 @@
     <Content Include="cordovadist\windows\scripts\appBundle.js" />
     <Content Include="cordovadist\windows\scripts\platformOverrides.js" />
     <Content Include="cordovadist\windows\scripts\winstore-jscompat.js" />
+    <None Include="ImportCordovaAssets.proj" />
     <Content Include="index.html" />
     <Content Include="web.config" />
   </ItemGroup>
