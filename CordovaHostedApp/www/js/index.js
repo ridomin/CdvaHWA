@@ -38,6 +38,7 @@ var app = {
         var targetUrl = "https://cordovahostedweb.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId;
         var bkpLink = document.getElementById("bkpLink");
         bkpLink.setAttribute("href", targetUrl);
+        bkpLink.text = targetUrl;
         window.location.replace(targetUrl);
 },
     // Update DOM on a Received Event
