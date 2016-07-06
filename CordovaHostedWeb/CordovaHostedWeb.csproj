@@ -26,7 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -186,6 +186,7 @@
     <Content Include="cordovaApp\app.js.map" />
     <Content Include="cordovaApp\tsconfig.json" />
     <Content Include="cordovaApp\tsd.json" />
+    <None Include="Properties\PublishProfiles\cordovahostedweb - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\cordovahostedweb.pubxml" />
     <None Include="Properties\PublishProfiles\ridoapps.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
